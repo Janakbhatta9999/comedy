@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Funny Question 😄</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Falling popups container -->
+  <div id="rainContainer" aria-hidden="true"></div>
+
+  <main class="card">
+    <p class="question" id="questionText">Are you a nonsense?</p>
+    <p class="tease" id="teaseText">Choose honestly... 👀</p>
+
+    <div class="btn-area" id="btnArea">
+      <button class="btn yes" id="yesBtn">Yes</button>
+      <button class="btn no" id="noBtn" type="button">No</button>
+    </div>
+
+    <div class="result" id="resultBox" aria-live="polite"></div>
+
+    <button class="reset" id="resetBtn">Reset</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
