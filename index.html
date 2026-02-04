@@ -2,28 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Funny Question 😄</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Are you stupid? 😭</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Falling popups container -->
-  <div id="rainContainer" aria-hidden="true"></div>
 
-  <main class="card">
-    <p class="question" id="questionText">Are you a nonsense?</p>
-    <p class="tease" id="teaseText">Choose honestly... 👀</p>
+  <div class="wrap">
+    <h1>Are you a nonsense? 🤡</h1>
+    <p class="sub">Try clicking NO… if you can 😈</p>
 
-    <div class="btn-area" id="btnArea">
-      <button class="btn yes" id="yesBtn">Yes</button>
-      <button class="btn no" id="noBtn" type="button">No</button>
+    <div class="btn-row">
+      <button id="yesBtn" class="btn yes">Yes ✅</button>
+      <button id="noBtn" class="btn no">No ❌</button>
+      <button id="resetBtn" class="btn ghost">Reset 🔁</button>
     </div>
+  </div>
 
-    <div class="result" id="resultBox" aria-live="polite"></div>
+  <!-- Falling messages -->
+  <div id="toastArea"></div>
 
-    <button class="reset" id="resetBtn">Reset</button>
-  </main>
+  <!-- Quiz Popup -->
+  <div id="quizOverlay" class="overlay hidden">
+    <div class="modal">
+      <h2>Prove you are not a noob 😎</h2>
+      <p id="quizQuestion"></p>
 
-  <script src="script.js"></script>
+      <div id="options"></div>
+
+      <p id="quizResult" class="result"></p>
+
+      <div class="modal-actions">
+        <button id="newQBtn" class="btn ghost">New Question 🔄</button>
+        <button id="closeQuiz" class="btn ghost">Close ❌</button>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
 </body>
 </html>
